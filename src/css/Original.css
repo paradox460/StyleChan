@@ -133,10 +133,6 @@ s:focus {
 .boardBanner {
   text-align: center;
 }
-#bannerCnt img {
-  width: 300px;
-  height: 100px;
-}
 div.sideArrows {
   float: left;
   margin-right: 2px;
