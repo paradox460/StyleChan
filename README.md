@@ -1,4 +1,4 @@
-![StyleChan](http://i.imgur.com/W8aFRNP.png) StyleChan
+![StyleChan](https://i.imgur.com/W8aFRNP.png) StyleChan
 ====
 
 StyleChan is a userscript functioning on top of 4chan X allowing you to customize the site with various themes. 
