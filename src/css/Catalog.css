@@ -1,0 +1,24 @@
+/* Catalog Fonts */
+:root.catalog-justify .teaser,
+:root.catalog-justify .catalog-thread > .comment {
+  text-align: justify !important;
+}
+/* Background */
+:root.catalog-background #threads div.thread,
+:root.catalog-background .catalog-thread {
+  background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ") !important;
+}
+:root.catalog-background .teaser,
+:root.catalog-background .catalog-thread > .comment {
+  margin: 0 5px 5px 5px;
+}
+:root.catalog-background .thumb,
+:root.catalog-background img.catalog-thumb  {
+  margin-top: 8px;
+}
+/* Thumbnails */
+:root.catalog-thumbsize .thumb,
+:root.catalog-thumbsize img.catalog-thumb  {
+  width: 150px !important;
+  height: 150px !important;
+}
