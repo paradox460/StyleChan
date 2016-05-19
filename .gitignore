@@ -17,6 +17,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+node_modules/
+*~
+*.db
+tmp/
+TODO.md
+*.pem
+Gruntfile.js
+
 # =========================
 # Operating System Files
 # =========================

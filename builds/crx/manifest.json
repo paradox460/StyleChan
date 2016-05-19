@@ -1,0 +1,25 @@
+{
+  "name": "StyleChan",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Customizable themes for 4chan X.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [{
+    "js": ["script.js"],
+    "matches": ["*://boards.4chan.org/*"],
+    "all_frames": true,
+    "run_at": "document_start"
+  }],
+  "homepage_url": "https://github.com/nebukazar/StyleChan/",
+  "update_url": "https://nebukazar.github.io/StyleChan/builds/updates.xml",
+  "minimum_chrome_version": "32",
+  "permissions": [
+    "storage",
+    "*://www.4chan.org/*",
+    "*://boards.4chan.org/*"
+  ]
+}
