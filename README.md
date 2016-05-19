@@ -1,9 +1,9 @@
-StyleChan
+![StyleChan](http://i.imgur.com/W8aFRNP.png) StyleChan
 ====
 
-StyleChan is a userscript functioning on top of 4chan X which allows you to customize the site with various themes. 
+StyleChan is a userscript functioning on top of 4chan X allowing you to customize the site with various themes. 
 
-Originally developed by [seaweedchan](https://github.com/seaweedchan), this fork is a fork of [Oneechan](https://nebukazar.github.com).
+Originally developed by [seaweedchan](https://github.com/seaweedchan), this is a fork of the [Oneechan](https://nebukazar.github.com) fork.
 
 ##[Click to Install](https://nebukazar.github.io/StyleChan/builds/StyleChan.user.js)
 
