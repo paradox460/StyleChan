@@ -16,7 +16,7 @@ Installing [4chan X](https://github.com/ccd0/4chan-x) is **required** for StyleC
 
 - Chrome: Requires the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl) extension. Click the Install link above. Alternatively you can download a [.crx here](https://nebukazar.github.io/StyleChan/builds/StyleChan.crx) if you are using Chromium or are not using Windows. Drag&drop into the extensions page to install.
 
-- Pale Moon: Requires [Greasemonkey 1.15](https://addons.mozilla.org/firefox/addon/greasemonkey/versions/1.15beta2) addon. Click the Install link above.
+- Pale Moon: Requires [Greasemonkey for Pale Moon](https://github.com/janekptacijarabaci/greasemonkey/releases/latest) addon. Click the Install link above.
 
 #### Troubleshooting
 
