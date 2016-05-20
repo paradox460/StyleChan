@@ -14,10 +14,6 @@ body {
   padding: 2px 13px 2px;
   display: block !important;
 }
-.useremail::before {
-  margin-bottom: -20px;
-  display: inline-block;
-}
 .summary {
   margin-left: 2px;
 }
@@ -46,7 +42,7 @@ div.post {
   margin-left: 13px !important;
 }
 .postMessage > .inline {
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 .inline .op>.postInfo,
 #qp .op>.postInfo {
@@ -251,8 +247,11 @@ hr {
   letter-spacing:-2px;
 }
 /* Banner */
+#bannerCnt {
+  border: 0 !important;
+}
 :root.banner-opacity #bannerCnt {
-  opacity: 0.5;
+  opacity: .5;
   transition: opacity .3s ease-out 0s;
 }
 :root.banner-opacity #bannerCnt:hover {
@@ -264,7 +263,7 @@ hr {
   border-radius: 3px;
 }
 .pages strong>a:hover {
-  opacity: 0.7 !important;
+  opacity: .7 !important;
   transition: opacity .3s ease-in 0s;
 }
 .pagelist {
@@ -309,7 +308,7 @@ hr {
   width: 20px;
 }
 .pagelist span {
-  opacity: 0.2;
+  opacity: .2;
 }
 /* Catalog */
 .catalog-thread {
@@ -330,7 +329,7 @@ hr {
 }
 .pages.cataloglink a:hover {
   color: " + $SS.theme.textColor.hex + " !important;
-  opacity: 0.7 !important;
+  opacity: .7 !important;
   transition: opacity .3s ease-in 0s;
 }
 /* /f/ */
@@ -354,7 +353,7 @@ table.flashListing .highlightPost {
 }
 /* Ads */
 :root.ad-opacity .center img {
-  opacity: 0.5;
+  opacity: .5;
   transition: opacity .3s ease-out 0s;
 }
 :root.ad-opacity .center img:hover {
@@ -385,7 +384,7 @@ table.flashListing .highlightPost {
 }
 /* Thumb Opacity */
 :root.thumb-opacity .fileThumb {
-  opacity: 0.5;
+  opacity: .5;
   transition: opacity .3s ease-out 0s;
 }
 :root.thumb-opacity .fileThumb:hover {
