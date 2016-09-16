@@ -39,10 +39,10 @@
   },
   "author": "seaweedchan",
   "contributors": [
-    "nebukazar<justsoulay@gmail.com>"
+    "nebukazar<nebukazar.github.com>"
   ],
   "namespace": "seaweedchan.github.com",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "readmeFilename": "README.md",
   "engines": {
     "node": ">=0.10"
