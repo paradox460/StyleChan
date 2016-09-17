@@ -337,3 +337,17 @@ select:focus,
 #thread-watcher {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
+/* Closed Threads */
+.closed {
+  margin-top: 10px;
+  color: red;
+}
+/* /f/ */
+#swf-embed-header.postblock {
+  border: 1px solid " + $SS.theme.brderColor.hex + " !important;
+  background-color: rgba(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
+  color: " + $SS.theme.linkColor.hex + " !important;
+}
+#swf-embed-close {
+  right: 1px !important;
+}

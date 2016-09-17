@@ -863,9 +863,6 @@
                 });
 
             }
-
-            $SS.pages.init();
-
         },
         init: function(reload) {
             if (!reload) {
@@ -2548,15 +2545,6 @@
             }
         },
 
-        pages: {
-            hasInit: false,
-            init: function() {
-                if (this.hasInit) {
-                    $("#pagesDrop").remove();
-                    return this.hasInit = false;
-                }
-            }
-        },
         jscolor: {
             getElementPos: function(e) {
                 var e1 = e,
