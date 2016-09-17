@@ -1,6 +1,6 @@
 {
   "name": "StyleChan",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Customizable themes for 4chan X.",
   "meta": {
     "name": "StyleChan",
@@ -39,10 +39,10 @@
   },
   "author": "seaweedchan",
   "contributors": [
-    "nebukazar<justsoulay@gmail.com>"
+    "nebukazar<nebukazar.github.com>"
   ],
   "namespace": "seaweedchan.github.com",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "readmeFilename": "README.md",
   "engines": {
     "node": ">=0.10"

@@ -163,9 +163,3 @@ input[type="number"] {
 ::-webkit-outer-spin-button { 
   -webkit-appearance: none;
 }
-/* webkit captcha scrollbar? */
-:root.ua-blink #qr .captcha-container > div > div:first-of-type {
-  overflow-y: hidden !important;
-  overflow-x: hidden !important;
-  padding-right: 0 !important;
-}
