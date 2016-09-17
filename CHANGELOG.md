@@ -1,3 +1,10 @@
+### v1.0.3
+*2016-09-17*
+
+- Style embed window on /f/
+- Update class thread-view -> is_thread (#85)
+- Small CSS fixes
+
 ### v1.0.2
 *2016-07-08*
 
