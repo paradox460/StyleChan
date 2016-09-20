@@ -50,21 +50,21 @@ div.op.post div.file .fileThumb {
   padding-bottom: 0em;
   padding-top: 0.5em;
 }
-.fixed.bottom-header.index body {
+.fixed.bottom-header.is_index body {
   padding-bottom: 4.5em;
   padding-top: 0.5em;
 }
-.fixed.bottom-header.catalog body {
+.fixed.bottom-header.is_catalog body {
   padding-bottom: 3em;
   padding-top: 0.5em;
 }
 .fixed.bottom-header body {
   padding-top: 0.5em;
 }
-:root.index.bottom-header:not(.autohide) body {
+:root.is_index.bottom-header:not(.autohide) body {
   padding-bottom: 5em !important;
 }
-.fixed.top-header.index body {
+.fixed.top-header.is_index body {
   padding-bottom: 2.5em;
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
@@ -72,7 +72,7 @@ div.op.post div.file .fileThumb {
   padding-bottom: 0em; 
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
-.fixed.top-header.catalog body {
+.fixed.top-header.is_catalog body {
   padding-bottom: 0.5em;
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
@@ -170,13 +170,13 @@ span.hide-announcement {
 .bottomCtrl.desktop {
   float: right;
 }
-.fixed.bottom-header.index .bottomCtrl.desktop,
+.fixed.bottom-header.is_index .bottomCtrl.desktop,
 .fixed.bottom-header.is_thread .bottomCtrl.desktop {
   float: right;
   margin-bottom: 35px;
 }
 .fixed.top-header.is_thread .bottomCtrl.desktop,
-.fixed.top-header.index .bottomCtrl.desktop {
+.fixed.top-header.is_index .bottomCtrl.desktop {
   float: right;
   margin-bottom: 8px;
 }

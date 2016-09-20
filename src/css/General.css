@@ -74,6 +74,9 @@ div.post {
 .stub {
   padding: 2px;
 }
+.stub > a.show-thread-button {
+  margin-right: 4px;
+}
 :root.reply-hide .thread>.expanded-image>.reply,
 :root.reply-hide .thread>.hasInline>.reply {
    margin-left: 12px !important;
@@ -268,7 +271,7 @@ hr {
 }
 .pagelist {
   margin-left: 18px;
-  margin-bottom: " + (($SS.conf["Font Size"] < 12) ? 30 : 2) + "px;
+  margin-bottom: 15px;
 }
 :root.reply-fit-width .pagelist {
   margin-left: 0;
@@ -310,28 +313,6 @@ hr {
 .pagelist span {
   opacity: .2;
 }
-/* Catalog */
-.catalog-thread {
-  margin: 5px !important;
-}
-.extended-small .teaser, .extended-large .teaser {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-/* Catalog Link */
-.pages.cataloglink {
-  margin-left: 12px;
-  border-radius: 3px;
-}
-.pages.cataloglink a {
-  color: " + $SS.theme.textColor.hex + " !important;
-  font-weight: bold;
-}
-.pages.cataloglink a:hover {
-  color: " + $SS.theme.textColor.hex + " !important;
-  opacity: .7 !important;
-  transition: opacity .3s ease-in 0s;
-}
 /* /f/ */
 table.flashListing {
   margin-top: 20px;
@@ -361,10 +342,8 @@ table.flashListing .highlightPost {
   transition: opacity .3s ease-in 0s;
 }
 /* Navlinks */
-:root.index div.navLinks {
+body.is_index div.navLinks {
   padding: 5px 0;
-  margin-left: auto;
-  margin-top: auto;
 }
 .navLinks.navLinksBot.desktop {
   margin-bottom: 5px;
