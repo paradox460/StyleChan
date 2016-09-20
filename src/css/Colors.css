@@ -39,8 +39,9 @@ select,
 a,
 .typ, 
 .atn,
-:root.catalog .button,
-.options-button {
+body.is_catalog .button,
+.options-button,
+.tegaki-tb-btn {
   color: " + $SS.theme.linkColor.hex + " !important;
 }
 a.summary,
@@ -51,9 +52,10 @@ a.summary,
   color: #ffffff !important;
 }
 a:hover,
-:root.catalog .button:hover,
+body.is_catalog .button:hover,
 .lit,
-#header-bar #notifications a:hover {
+#header-bar #notifications a:hover,
+.tegaki-tb-btn:hover {
   color: " + $SS.theme.linkHColor.hex + " !important;
 }
 /* Header */
@@ -127,7 +129,7 @@ body {
   background: " + $SS.theme.bgImg.get() + $SS.theme.bgColor.hex + " !important;
 }
 .reply,
-:root.catalog .panel,
+body.is_catalog .panel,
 .dialog,
 .tab-label,
 #post-preview,
@@ -243,6 +245,9 @@ hr {
 :root.rounded-corners:root.vertical-qr #qr > .move {
   border-radius: 3px 3px 0 0 !important;
 }
+:root:not(.rounded-corners) #post-preview {
+  border-radius: 0 !important;
+}
 .reply,
 :root.op-background .postContainer.opContainer,
 .dialog,
@@ -269,6 +274,7 @@ textarea,
 :root.vertical-qr #qr .move,
 #qr select,
 select,
+#post-preview,
 .captcha-root,
 .dd-menu ul {
   border: 1px solid " + $SS.theme.inputbColor.hex + " !important;
