@@ -40,6 +40,7 @@ a,
 .typ, 
 .atn,
 body.is_catalog .button,
+:root.catalog-mode .button,
 .options-button,
 .tegaki-tb-btn {
   color: " + $SS.theme.linkColor.hex + " !important;
@@ -53,6 +54,7 @@ a.summary,
 }
 a:hover,
 body.is_catalog .button:hover,
+:root.catalog-mode .button:hover,
 .lit,
 #header-bar #notifications a:hover,
 .tegaki-tb-btn:hover {
@@ -130,6 +132,7 @@ body {
 }
 .reply,
 body.is_catalog .panel,
+:root.catalog-mode .panel,
 .dialog,
 .tab-label,
 #post-preview,

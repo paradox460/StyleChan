@@ -54,7 +54,8 @@ div.op.post div.file .fileThumb {
   padding-bottom: 4.5em;
   padding-top: 0.5em;
 }
-.fixed.bottom-header.is_catalog body {
+.fixed.bottom-header.is_catalog body,
+.fixed.bottom-header.catalog-mode body {
   padding-bottom: 3em;
   padding-top: 0.5em;
 }
@@ -72,7 +73,8 @@ div.op.post div.file .fileThumb {
   padding-bottom: 0em; 
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
-.fixed.top-header.is_catalog body {
+.fixed.top-header.is_catalog body,
+.fixed.top-header.catalog-mode body {
   padding-bottom: 0.5em;
   padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
