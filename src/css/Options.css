@@ -116,6 +116,9 @@ select[name='Font Family']>option {
 .theme-preview {
   cursor: default;
 }
+.theme-preview blockquote {
+  margin: 12px 40px !important;
+}
 #themes-section .reply {
   padding: 2px!important;
   position:relative;
