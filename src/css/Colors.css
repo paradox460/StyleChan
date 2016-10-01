@@ -13,7 +13,8 @@ textarea,
 select,
 .captcha-root,
 .tegaki-label,
-.dd-menu ul {
+.dd-menu ul,
+.boxbar {
   color: " + $SS.theme.textColor.hex + " !important;
 }
 /* Names */
@@ -37,7 +38,7 @@ select,
 }
 /* Links */
 a,
-.typ, 
+.typ,
 .atn,
 body.is_catalog .button,
 :root.catalog-mode .button,
@@ -79,7 +80,7 @@ body.is_catalog .button:hover,
 /* Greentext */
 .postMessage>.quote,
 s:hover .quote,
-.str, 
+.str,
 .atv,
 .new,
 .catalog-thread > .comment > .quote {
@@ -137,9 +138,11 @@ body.is_catalog .panel,
 .tab-label,
 #post-preview,
 #tegaki,
+.boxbar,
 :root.op-background .postContainer.opContainer,
 .flashListing tr:nth-of-type(2n+1),
-.dd-menu ul {
+.dd-menu ul,
+:root.catalog-hover-expand .catalog-container:hover > .post {
   background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ")!important;
 }
 :root.recolor-even .thread>.replyContainer:nth-of-type(even):not(.hidden) .post {
@@ -198,11 +201,11 @@ select:hover,
   background: rgb(" + $SS.theme.inputColor.hover + ") !important;
   transition: background .2s;
 }
-hr {     
-  background-image: linear-gradient(to left, rgba(" + $SS.theme.brderColor.rgb + ",0), rgb(" + $SS.theme.brderColor.rgb + "), rgba(" + $SS.theme.brderColor.rgb + ",0)); 
+hr {
+  background-image: linear-gradient(to left, rgba(" + $SS.theme.brderColor.rgb + ",0), rgb(" + $SS.theme.brderColor.rgb + "), rgba(" + $SS.theme.brderColor.rgb + ",0));
 }
-#unread-line {      
-  background-image: linear-gradient(to left, rgba(" + $SS.theme.unreadColor.rgb + ",0), rgb(" + $SS.theme.unreadColor.rgb + "), rgba(" + $SS.theme.unreadColor.rgb + ",0)); 
+#unread-line {
+  background-image: linear-gradient(to left, rgba(" + $SS.theme.unreadColor.rgb + ",0), rgb(" + $SS.theme.unreadColor.rgb + "), rgba(" + $SS.theme.unreadColor.rgb + ",0));
 }
 .inline {
   background:rgba\(" + $SS.theme.mainColor.shiftRGB(-16) + ",.8)!important;
@@ -240,7 +243,11 @@ hr {
 :root.rounded-corners .thumb,
 :root.rounded-corners .fileThumb img:not(.full-image),
 :root.rounded-corners .catalog-thumb,
-:root.rounded-corners .dd-menu ul {
+:root.rounded-corners .dd-menu ul,
+:root.rounded-corners.werkTyme .catalog-thread:not(:hover),
+:root.rounded-corners.werkTyme:not(.catalog-hover-expand) .catalog-thread,
+:root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,
+:root.rounded-corners.catalog-hover-expand .catalog-container:hover .catalog-reply  {
   border-radius: 3px !important;
 }
 :root.post-info.rounded-corners .reply>.postInfo,
@@ -279,7 +286,11 @@ textarea,
 select,
 #post-preview,
 .captcha-root,
-.dd-menu ul {
+.dd-menu ul,
+:root.werkTyme .catalog-thread:not(:hover),
+:root.werkTyme:not(.catalog-hover-expand) .catalog-thread,
+:root.catalog-hover-expand .catalog-container:hover > .post,
+:root.catalog-hover-expand .catalog-container:hover .catalog-reply {
   border: 1px solid " + $SS.theme.inputbColor.hex + " !important;
 }
 .options-button,
@@ -328,15 +339,15 @@ select:focus,
 }
 /* Shadows */
 #navlinks a {
-  text-shadow:" + $SS.theme.mainColor.hex + " -1px -1px, 
+  text-shadow:" + $SS.theme.mainColor.hex + " -1px -1px,
   " + $SS.theme.mainColor.hex + " 1px -1px,
-  " + $SS.theme.mainColor.hex + " -1px 1px, 
+  " + $SS.theme.mainColor.hex + " -1px 1px,
   " + $SS.theme.mainColor.hex + " 1px 1px,
-  " + $SS.theme.mainColor.hex + " -1px 0, 
+  " + $SS.theme.mainColor.hex + " -1px 0,
   " + $SS.theme.mainColor.hex + " 1px 0,
-  " + $SS.theme.mainColor.hex + " 0 -1px, 
+  " + $SS.theme.mainColor.hex + " 0 -1px,
   " + $SS.theme.mainColor.hex + " 0 1px,
-  rgba(0,0,0,.6) 0 2px 4px, 
+  rgba(0,0,0,.6) 0 2px 4px,
   rgba(0,0,0,.6) 0 0 2px;
 }
 .thumb {

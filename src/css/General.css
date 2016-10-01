@@ -201,7 +201,7 @@ input[type=checkbox]:checked+.riceCheck::before {
 :root:not(.fixed) .boardBanner {
   top: 0;
 }
-#full-board-list>a, 
+#full-board-list>a,
 .navSmall>a {
   margin-left: 2px;
 }
@@ -211,8 +211,8 @@ input[type=checkbox]:checked+.riceCheck::before {
 }
 .globalMessage, h2, h3 {
   margin: auto;
-}#custom-board-list, 
-#full-board-list, 
+}#custom-board-list,
+#full-board-list,
 .shortcut {
   vertical-align: baseline !important;
 }
@@ -283,7 +283,7 @@ hr {
 .next,
 .prev {
   border: none !important;
-  position: relative; 
+  position: relative;
 }
 .next a,
 .prev a {
@@ -326,7 +326,7 @@ table.flashListing .highlightPost {
   padding-right: 4px !important;
   text-align: center !important;
 }
-#delform[action='https://sys.4chan.org/f/up.php'], 
+#delform[action='https://sys.4chan.org/f/up.php'],
 #delform[action='https://sys.4chan.org/f/up.php'] .postblock {
   background: none !important;
   border: none !important;
@@ -351,12 +351,12 @@ body.is_index div.navLinks {
 #hoverUI {
   z-index: 12 !important;
 }
-#search-box, 
+#search-box,
 #index-search {
   width: 8%;
   transition: color .25s, border-color .25s, width .25s;
 }
-#search-box:focus, 
+#search-box:focus,
 #index-search:focus {
   width: 12%;
   transition: color .25s, border-color .25s, width .25s;
@@ -379,4 +379,5 @@ select {
 #delform {
   overflow-wrap: break-word;
   word-break: break-word;
+  margin-bottom: 15px; /* unrelated to issue #90 */
 }
