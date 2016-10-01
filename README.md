@@ -1,9 +1,9 @@
 ![StyleChan](https://i.imgur.com/W8aFRNP.png) StyleChan
 ====
 
-StyleChan is a userscript functioning on top of 4chan X allowing you to customize the site with various themes. 
+StyleChan is a userscript functioning on top of 4chan X allowing you to customize the site with various themes.
 
-Originally developed by [seaweedchan](https://github.com/seaweedchan), this is a fork of the [Oneechan](https://nebukazar.github.com) fork.
+Originally developed by [seaweedchan](https://github.com/seaweedchan), this is a fork of [Oneechan](https://nebukazar.github.com) without mascots.
 
 ##[Click to Install](https://nebukazar.github.io/StyleChan/builds/StyleChan.user.js)
 
@@ -16,7 +16,9 @@ Installing [4chan X](https://github.com/ccd0/4chan-x) is **required** for StyleC
 
 - Chrome: Requires the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl) extension. Click the Install link above. Alternatively you can download a [.crx here](https://nebukazar.github.io/StyleChan/builds/StyleChan.crx) if you are using Chromium or are not using Windows. Drag&drop into the extensions page to install.
 
-- Pale Moon: Requires [Greasemonkey for Pale Moon](https://github.com/janekptacijarabaci/greasemonkey/releases/latest) addon. Click the Install link above.
+- Pale Moon: Requires the [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/versions/?page=2#version-1.15.1-signed) addon. Click the Install link above.
+
+- MS Edge: Requires the [Tampermonkey](https://www.microsoft.com/store/apps/9NBLGGH5162S) addon. Click the Install link above.
 
 #### Troubleshooting
 
