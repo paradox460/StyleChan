@@ -18,6 +18,7 @@ Installing [4chan X](https://github.com/ccd0/4chan-x) is **required** for StyleC
 
 - Pale Moon: Requires the [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/versions/?page=2#version-1.15.1-signed) addon. Click the Install link above.
 
+- MS Edge: Requires the [Tampermonkey](https://www.microsoft.com/store/apps/9NBLGGH5162S) addon. Click the Install link above.
 
 #### Troubleshooting
 
