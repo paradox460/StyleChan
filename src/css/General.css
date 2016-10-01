@@ -115,7 +115,7 @@ div.post {
 .menu-button + .container:not(:empty) {
   margin-left: 4px !important;
 }
-:root.reply-fit-width .post .menu-button {
+:root:not(.catalog-mode).reply-fit-width .post .menu-button {
   float: right;
   margin-left: 0;
   position: relative;
@@ -200,6 +200,9 @@ input[type=checkbox]:checked+.riceCheck::before {
 }
 :root:not(.fixed) .boardBanner {
   top: 0;
+}
+.center {
+  margin: 5px !important;
 }
 #full-board-list>a,
 .navSmall>a {
