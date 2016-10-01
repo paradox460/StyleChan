@@ -1,3 +1,11 @@
+### v1.0.7
+*2016-10-01*
+
+- Updates for new 4chan X catalog
+- Add option `Show Board Banners`
+- Changes to native catalog for backgrounds and margins
+- Some page 404 touch-ups
+
 ### v1.0.6
 *2016-09-22*
 

@@ -45,8 +45,9 @@
             ],
             "Rounded Corners": [false, "Styles replies, menus and Quick Reply to have subtly rounded corners."],
             "Underline All Links": [false, "Underlines all links in the page."],
-            "Show Banner": [false, "Toggle visibility of the banner.", null, true],
+            "Show Banner": [false, "Toggle visibility of banner.", null, true],
             "Reduce Banner Opacity": [false, "Reduce opacity of the banner for easier viewing.", "Show Banner", true, true],
+            "Show Board Banners": [false, "Toggle visibility of board banners."],
             "Show Board Name": [true, "Toggle visibility of the board name."],
             "Show Reply to Thread Button": [false, "Toggle visibility of the Start a Thread / Reply to Thread button."],
             "Show Blotter": [true, "Toggle visibility of the 4chan news blotter."],
@@ -385,7 +386,7 @@
             return setTimeout($.asap, 25, test, cb);
         }
     };
-    
+
     $lib.prototype = {
             constructor: $lib,
             elems: [],
@@ -875,7 +876,7 @@
                 $SS.location = $SS.getLocation();
 
                 if ((m_VERSION = $SS.Config.get("VERSION")) !== VERSION) {
-                    // Signal that StyleChan has updated                    
+                    // Signal that StyleChan has updated
                     var detail = {
                         type: 'info',
                         content: NAME + ' has been updated to version ' + VERSION + '.',
@@ -892,7 +893,7 @@
                         document.dispatchEvent(event);
                     }, 25);
                     // Correct selected theme after updating
-                    // and the number defaults has changed.                    
+                    // and the number defaults has changed.
                     var ntThemes = $SS.Themes.defaults.length,
                         otThemes = $SS.Config.get("Total Themes"),
                         sTheme = $SS.Config.get("Selected Theme");
@@ -2502,6 +2503,7 @@
                 $("html").optionClass("Fit Width", true, "reply-fit-width");
                 $("html").optionClass("Show Banner", false, "hide-banner");
                 $("html").optionClass("Reduce Banner Opacity", true, "banner-opacity");
+                $("html").optionClass("Show Board Banners", false, "hide-board-banners");
                 $("html").optionClass("Show Reply to Thread Button", false, "hide-button");
                 $("html").optionClass("Show Reply Header", true, "post-info");
                 $("html").optionClass("Show File Info", false, "show-file-info");

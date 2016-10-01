@@ -1,10 +1,18 @@
 /* Catalog */
+:root.catalog-mode .board {
+  padding: 0 !important;
+}
 .catalog-thread {
   margin: 5px !important;
 }
 .extended-small .teaser, .extended-large .teaser {
   margin-left: 5px;
   margin-right: 5px;
+}
+div.thread {
+  margin: 2px;
+  clear: both;
+  padding-bottom: 10px;
 }
 /* Catalog Link */
 .pages.cataloglink {
@@ -29,6 +37,10 @@
 :root.catalog-background #threads div.thread,
 :root.catalog-background .catalog-thread {
   background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ") !important;
+}
+:root.rounded-corners.catalog-background #threads div.thread,
+:root.rounded-corners.catalog-background .catalog-thread {
+  border-radius: 3px !important;
 }
 :root.catalog-background .teaser,
 :root.catalog-background .catalog-thread > .comment {

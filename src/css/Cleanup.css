@@ -43,7 +43,7 @@ hr:not(#unread-line),
 [hidden] {
   display: none;
 }
-:root:not(.show-ads) .center {
+:root.hide-board-banners .center {
   display: none !important;
 }
 /* Get rid of Chrome input outlines, and link outlines */
