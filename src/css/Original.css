@@ -8,6 +8,22 @@
   position: absolute;
   pointer-events: none;
 }
+/* 4chan Pass Signature */
+.pu-img {
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('//s.4cdn.org/image/minileaf.gif');
+}
+.pu-lbl {
+    color: " + $SS.theme.titleColor.hex + " !important;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* End */
 .sjis {
   font-size: 16px;
   line-height: 17px;

@@ -155,7 +155,9 @@
             "Show Header Shadow": [true, "Gives the header a drop shadow."],
             "Highlight Current Board": [true, "Gives the current board link a bottom highlight border."],
             ":: Highlighting": ["header", ""],
-            "Decoration Style": [
+            "Highlight (OP) quotes": [false, "Highlights all (OP) mentions."],
+            "Highlight (You) quotes": [false, "Highlights all posts quoting (You)"],
+            "Post Decoration Style": [
                 0, "Changes the highlight decoration of posts.", [{
                     name: "None",
                     value: 0
@@ -170,7 +172,7 @@
                     value: 3
                 }]
             ],
-            "Decoration Width": [
+            "Post Decoration Width": [
                 1, "Changes decoration width of highlighted posts.", [{
                     name: "Large",
                     value: 6
@@ -186,9 +188,9 @@
                 }], true
             ],
             "Custom Decoration Width": [
-                0, "Enter a custom width for the decoration (pixels).", "Decoration Width", 999, true
+                0, "Enter a custom width for the decoration (pixels).", "Post Decoration Width", 999, true
             ],
-            "Highlight Style": [
+            "Post Highlight Style": [
                 "solid", "Changes style of post highlight.", [{
                     name: "Dashed",
                     value: "dashed"
@@ -987,7 +989,7 @@
                 $SS.conf["Margin Left"] = $SS.conf["Left Margin"] !== 999 ? $SS.conf["Left Margin"] : $SS.conf["Custom Left Margin"];
                 $SS.conf["Margin Right"] = $SS.conf["Right Margin"] !== 999 ? $SS.conf["Right Margin"] : $SS.conf["Custom Right Margin"];
                 $SS.conf["Margin Post Message"] = $SS.conf["Post Message Margin"] === 1 ? "4px 16px" : ($SS.conf["Post Message Margin"] === 3 ? "20px 40px" : "");
-                $SS.conf["Width Decoration"] = $SS.conf["Decoration Width"] !== 999 ? $SS.conf["Decoration Width"] : $SS.conf["Custom Decoration Width"];
+                $SS.conf["Width Decoration"] = $SS.conf["Post Decoration Width"] !== 999 ? $SS.conf["Post Decoration Width"] : $SS.conf["Custom Decoration Width"];
             },
             get: function(name) {
                 var val = this.hasGM ?
@@ -2509,9 +2511,11 @@
                 $("html").optionClass("Show File Info", false, "show-file-info");
                 $("html").optionClass("Borders", 2, "borders-all");
                 $("html").optionClass("Borders", 3, "borders-none");
-                $("html").optionClass("Decoration Style", 1, "hl-border");
-                $("html").optionClass("Decoration Style", 2, "hl-outline");
-                $("html").optionClass("Decoration Style", 3, "hl-border-down");
+                $("html").optionClass("Highlight (OP) quotes", true, "highlight-op");
+                $("html").optionClass("Highlight (You) quotes", true, "highlight-you");
+                $("html").optionClass("Post Decoration Style", 1, "hl-border");
+                $("html").optionClass("Post Decoration Style", 2, "hl-outline");
+                $("html").optionClass("Post Decoration Style", 3, "hl-border-down");
                 $("html").optionClass("Sidebar Position", 1, "right-sidebar");
                 $("html").optionClass("Sidebar Position", 2, "left-sidebar");
                 $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
