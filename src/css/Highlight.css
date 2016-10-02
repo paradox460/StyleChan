@@ -73,11 +73,11 @@
   color: " + $SS.theme.linkHColor.hex + " !important;
 }
 /* Highlight (OP) and (You) */
-:root.highlight-op .qmark-op {
+:root.highlight-opQuotes .qmark-op {
   color: rgba(" + $SS.theme.postHLColor.rgb + ",1.0);
   font-weight: bold;
 }
-:root.highlight-you .qmark-you {
+:root.highlight-youQuotes .qmark-you {
   color: rgba(" + $SS.theme.quotesYouHLColor.rgb + ",1.0);
   font-weight: bold;
 }

@@ -2511,8 +2511,8 @@
                 $("html").optionClass("Show File Info", false, "show-file-info");
                 $("html").optionClass("Borders", 2, "borders-all");
                 $("html").optionClass("Borders", 3, "borders-none");
-                $("html").optionClass("Highlight (OP) quotes", true, "highlight-op");
-                $("html").optionClass("Highlight (You) quotes", true, "highlight-you");
+                $("html").optionClass("Highlight (OP) quotes", true, "highlight-opQuotes");
+                $("html").optionClass("Highlight (You) quotes", true, "highlight-youQuotes");
                 $("html").optionClass("Post Decoration Style", 1, "hl-border");
                 $("html").optionClass("Post Decoration Style", 2, "hl-outline");
                 $("html").optionClass("Post Decoration Style", 3, "hl-border-down");
