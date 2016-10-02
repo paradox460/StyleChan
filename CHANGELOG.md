@@ -1,3 +1,8 @@
+### v1.0.9
+*2016-10-02*
+
+- Fix bug introduced in last version with (You) posts not being highlighted
+
 ### v1.0.8
 *2016-10-02*
 
