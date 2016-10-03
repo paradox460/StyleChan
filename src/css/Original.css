@@ -9,21 +9,32 @@
   pointer-events: none;
 }
 /* 4chan Pass Signature */
+
 .pu-img {
-    vertical-align: middle;
-    margin-top: -3px;
-    margin-right: 3px;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: url('//s.4cdn.org/image/minileaf.gif');
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('//s.4cdn.org/image/minileaf.gif');
 }
 .pu-lbl {
-    color: " + $SS.theme.titleColor.hex + " !important;
-    font-weight: bold;
-    font-size: 12px;
+  color: " + $SS.theme.titleColor.hex + " !important;
+  font-weight: bold;
+  font-size: 12px;
 }
+.n-pu {
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: -2px;
+  background: url('//s.4cdn.org/image/minileaf.gif');
+}
+
 /* End */
+
 .sjis {
   font-size: 16px;
   line-height: 17px;
@@ -64,7 +75,9 @@ div.op.post div.file .fileThumb {
 .postContainer {
   display: block;
 }
+
 /* Padding according to header position */
+
 .fixed.bottom-header.is_thread body {
   padding-bottom: 0em;
   padding-top: 0.5em;
@@ -176,13 +189,15 @@ table {
   margin-bottom: 20px !important;
 }
 #qf-box {
-    width: 120px;
+  width: 120px;
 }
 span.hide-announcement {
   margin-left: 3px;
   vertical-align: sub;
 }
+
 /* Bottom Controls */
+
 .bottomCtrl.desktop {
   float: right;
 }
@@ -196,7 +211,9 @@ span.hide-announcement {
   float: right;
   margin-bottom: 8px;
 }
+
 /* Other */
+
 #navlinks {
   top: 135px;
   right: 10px;
@@ -205,11 +222,15 @@ span.hide-announcement {
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
+
 /* Accommodate Oneechan icon in header */
+
 .centered-links:root #shortcuts {
   width: 350px !important;
 }
+
 /* Blotter */
+
 #blotter {
   margin-bottom: 15px;
   font-size: 11px;
