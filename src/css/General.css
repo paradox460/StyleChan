@@ -11,7 +11,7 @@ body {
 }
 /* Replies */
 .postInfo {
-  padding: 2px 13px 2px;
+  padding: 5px 13px;
   display: block !important;
 }
 .summary {
@@ -356,7 +356,7 @@ body.is_index div.navLinks {
 }
 #search-box,
 #index-search {
-  width: 8%;
+  width: 9%;
   transition: color .25s, border-color .25s, width .25s;
 }
 #search-box:focus,

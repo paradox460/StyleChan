@@ -1,6 +1,9 @@
 .closeIcon {
   background-image: none !important;
 }
+.closeIcon::after {
+  content: 'x';
+}
 /* Thread watcher favicon */
 .watch-thread-link {
   margin-bottom: -7px;

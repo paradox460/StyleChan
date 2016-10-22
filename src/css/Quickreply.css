@@ -98,8 +98,6 @@
   min-width: 297px !important;
   top: auto !important;
   position: fixed;
-  right: 0 !important;
-  left: auto !important;
 }
 :root.vertical-qr #qr .move {
   position: absolute;
@@ -112,7 +110,7 @@
 :root.vertical-qr #qr:hover .move {
   transition: opacity .42s linear;
 }
-:root.vertical-qr #qr:hover .move, 
+:root.vertical-qr #qr:hover .move,
 :root.vertical-qr #qr.focus .move {
   opacity: 0 !important;
 }
@@ -122,7 +120,7 @@
 :root.vertical-qr.top-header #qr {
   bottom: 0 !important;
 }
-:root.vertical-qr .captcha-img, 
+:root.vertical-qr .captcha-img,
 :root.vertical-qr .captcha-img img {
   max-width: 247px;
 }
@@ -157,9 +155,9 @@
 input[type="number"] {
   -moz-appearance: textfield;
 }
-::-webkit-inner-spin-button { 
+::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-::-webkit-outer-spin-button { 
+::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
