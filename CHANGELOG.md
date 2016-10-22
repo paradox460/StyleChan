@@ -1,3 +1,13 @@
+### v1.0.11
+*2016-10-22*
+
+- Fix Left Minimal Sidebar being broken
+- Small native catalog fixes
+- Show 4chan Pass link when enabled in 4chan X
+- Don't hide Banner when Minimal Sidebar is enabled
+- Add additional CSS rule to Stilig theme for OP background
+- Change Blue Tone theme background
+
 ### v1.0.10
 *2016-10-03*
 
