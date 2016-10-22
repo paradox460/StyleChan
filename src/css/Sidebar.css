@@ -9,16 +9,16 @@
 :root.right-sidebar body {
   padding-right: 303px;
 }
-.boardBanner {
+.boardTitle {
   position: fixed;
 }
-:root.left-sidebar .boardBanner {
+:root.left-sidebar .boardTitle {
   left: 1px;
 }
-:root.right-sidebar .boardBanner {
+:root.right-sidebar .boardTitle {
   right: 1px;
 }
-:root.fixed:not(.autohide):not(.bottom) .boardBanner {
+:root.fixed:not(.autohide):not(.bottom) .boardTitle {
   margin-top: -6px;
 }
 :root.left-sidebar #qr {
@@ -29,7 +29,7 @@
   right: 0 !important;
   left: auto !important;
 }
-.captcha-img, 
+.captcha-img,
 .captcha-img img {
   min-width: 100% !important;
   height: 56px !important;
@@ -51,31 +51,30 @@
 :root.mini-sidebar:root.right-sidebar body {
   padding-right: 32px !important;
 }
-:root.mini-sidebar #bannerCnt,
 :root.mini-sidebar .boardSubtitle {
   display: none;
 }
 :root.mini-sidebar:root.ss-sidebar body::before {
   width: 31px !important;
 }
-:root.mini-sidebar .boardBanner {
+:root.mini-sidebar .boardTitle {
   top: 72px !important;
   width: inherit !important;
 }
-:root.mini-sidebar .boardBanner .boardTitle {
+:root.mini-sidebar .boardTitle .boardTitle {
   letter-spacing: -1px;
 }
-:root.mini-sidebar:root.right-sidebar .boardBanner {
+:root.mini-sidebar:root.right-sidebar .boardTitle {
   right: 32px;
   -webkit-transform-origin: top right;
   transform-origin: top right;
   -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
 }
-:root.mini-sidebar:root.left-sidebar .boardBanner {
+:root.mini-sidebar:root.left-sidebar .boardTitle {
   left: 32px;
   -webkit-transform-origin: top left;
   transform-origin: top left;
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg); 
+  -moz-transform: rotate(90deg);
 }

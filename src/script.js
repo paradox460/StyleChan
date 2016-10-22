@@ -843,10 +843,6 @@
                         $(this).attr("style", "");
                     });
 
-                if ((div = $(".closeIcon")).exists()) {
-                    div.text("x");
-                };
-
                 // 4chan ads being added with JS
                 if (!$SS.conf["Show Top Ad"]) {
                     $(".topad.center").remove();
@@ -1726,7 +1722,7 @@
                 threadHLColor: "7a7f88",
                 replybgHLColor: "e6e6e6",
                 replyslctColor: "5f5f65",
-                customCSS: ".reply {box-shadow: -1px 1px 1px rgba(0,0,0,.08);}"
+                customCSS: ".reply, :root.op-background .postContainer.opContainer {box-shadow: -1px 1px 1px rgba(0,0,0,.08);}"
             }, {
                 name: "Minimalistic Mayhem",
                 authorName: "Mayhem",
@@ -2389,7 +2385,7 @@
                 brderColor: "222222",
                 inputColor: "18191a",
                 inputbColor: "121314",
-                headerBGColor: "1b1b1b",
+                headerBGColor: "131313",
                 headerColor: "dddddd",
                 boardColor: "dddddd",
                 bgColor: "1b1b1b",
@@ -2411,7 +2407,7 @@
                 threadHLColor: "a0a0a0",
                 replybgHLColor: "141414",
                 replyslctColor: "ffffff",
-                customCSS: "body{\nbackground: rgba(19,19,19,1);\n}\n.boardBanner .boardTitle {\ntext-shadow: 0 0 3px #a0a0a0 !important;\nletter-spacing: 0px !important;\npadding-top: 30px !important;\n}\n#delform {\n padding: 0px 2px !important;\n background: rgba(19,19,19,1);\n}"
+                customCSS: ".boardBanner .boardTitle {\ntext-shadow: 0 0 3px #a0a0a0 !important;\nletter-spacing: 0px !important;\npadding-top: 30px !important;\n}"
             }, {
                 name: "Cold Snap",
                 authorName: "Kori",
