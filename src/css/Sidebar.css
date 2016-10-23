@@ -9,16 +9,17 @@
 :root.right-sidebar body {
   padding-right: 303px;
 }
-.boardTitle {
+:root.left-sidebar:not(.mini-sidebar) .boardBanner,
+:root.right-sidebar:not(.mini-sidebar) .boardBanner {
   position: fixed;
 }
-:root.left-sidebar .boardTitle {
+:root.left-sidebar:not(.mini-sidebar) .boardBanner {
   left: 1px;
 }
-:root.right-sidebar .boardTitle {
+:root.right-sidebar:not(.mini-sidebar) .boardBanner {
   right: 1px;
 }
-:root.fixed:not(.autohide):not(.bottom) .boardTitle {
+:root.fixed:not(.autohide):not(.bottom) .boardBanner {
   margin-top: -6px;
 }
 :root.left-sidebar #qr {
@@ -60,9 +61,8 @@
 :root.mini-sidebar .boardTitle {
   top: 72px !important;
   width: inherit !important;
-}
-:root.mini-sidebar .boardTitle .boardTitle {
   letter-spacing: -1px;
+  position: fixed;
 }
 :root.mini-sidebar:root.right-sidebar .boardTitle {
   right: 32px;
