@@ -1015,9 +1015,10 @@
             saveAndClose: false,
             init: function() {
                 $(document).bind("keydown", $SS.options.keydown);
-
-                var a = $("<span class='shortcut brackets-wrap'><a id='StyleChanLink' title='StyleChan Settings' class='fa fa-gears' href='javascript:;'>StyleChan</a></span>").bind("click", $SS.options.show); /* seaweedchan */
-                    b = $("<span id='StyleChanLink'> [<a title='StyleChan Settings' href='javascript:;'>StyleChan</a>]&nbsp;</span>").bind("click", $SS.options.show); /* loadletter */
+                /* seaweedchan */
+                var a = $("<span class='shortcut brackets-wrap'><a id='StyleChanLink' title='StyleChan Settings' class='fa fa-gears' href='javascript:;'>StyleChan</a></span>").bind("click", $SS.options.show);
+                /* loadletter */
+                    b = $("<span id='StyleChanLink'> [<a title='StyleChan Settings' href='javascript:;'>StyleChan</a>]&nbsp;</span>").bind("click", $SS.options.show);
 
                 $.asap(function() {
                     return $(".fourchan-x #shortcuts, .fourchan_x, .is_catalog").exists();
@@ -1130,7 +1131,7 @@
                         if (this.files[0].name.match(/\.json$/) == null) {
                             alert('Only JSON files are accepted!');
                             return;
-                        } else if (!confirm('Your current settings will be entirely overwritten, are you sure?')) {
+                        } else if (!confirm('Your current settings will be overwritten, are you sure?')) {
                             return;
                         }
                         reader.onload = (function(tFile) {
@@ -1159,7 +1160,7 @@
                     $("a[name=Export]", tOptions).bind("click", function() {
                         if ($("a[download]", tOptions).exists())
                             return;
-                        var exportalert = $("<a class='options-button'download='StyleChan v" + VERSION + " Settings.json' href='data:application/json," + encodeURIComponent(JSON.stringify($SS.exportOptions, null, 2)) + "'>Save me!").bind("click", $SS.options.close);
+                        var exportalert = $("<a class='options-button' download='StyleChan v" + VERSION + " Settings.json' href='data:application/json," + encodeURIComponent(JSON.stringify($SS.exportOptions, null, 2)) + "'>Save me!").bind("click", $SS.options.close);
                         return $(this).replace(exportalert);
                     });
                     // Reset settings
