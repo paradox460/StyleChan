@@ -99,22 +99,22 @@ div.op.post div.file .fileThumb {
 }
 .fixed.top-header.is_index body {
   padding-bottom: 2.5em;
-  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
+  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
 }
 .fixed.top-header.is_thread body {
   padding-bottom: 0em;
-  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
+  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
 }
 .fixed.top-header.is_catalog body,
 .fixed.top-header.catalog-mode body {
   padding-bottom: 0.5em;
-  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
+  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
 }
 .fixed.top-header.autohide body {
   padding-top: 2em !important;
 }
 .fixed.top-header body {
-  padding-top: 2.4em !important;
+  padding-top: 3em !important;
 }
 div.post {
   margin: 4px 0;
