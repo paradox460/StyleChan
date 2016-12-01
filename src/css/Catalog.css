@@ -2,15 +2,12 @@
 :root.catalog-mode .board {
   padding: 0 !important;
 }
-.catalog-thread {
-  margin: 5px !important;
-}
 .extended-small .teaser, .extended-large .teaser {
   margin-left: 5px;
   margin-right: 5px;
 }
 div.thread {
-  margin: 2px;
+  margin: 2px 1px 0 0;
   clear: both;
   padding-bottom: 10px;
 }
@@ -49,6 +46,12 @@ div.thread {
 :root.catalog-background .thumb,
 :root.catalog-background img.catalog-thumb  {
   margin-top: 8px;
+}
+:root.catalog-background .extended-large .thread {
+    min-height: 410px;
+}
+:root.catalog-background .extended-small .thread {
+    min-height: 320px;
 }
 /* Thumbnails */
 :root.catalog-thumbsize .thumb,

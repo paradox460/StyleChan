@@ -115,7 +115,7 @@ div.post {
 .menu-button + .container:not(:empty) {
   margin-left: 4px !important;
 }
-:root:not(.catalog-mode).reply-fit-width .post .menu-button {
+:root:not(.catalog-post).reply-fit-width .post .menu-button {
   float: right;
   margin-left: 0;
   position: relative;

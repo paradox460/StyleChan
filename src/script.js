@@ -786,7 +786,14 @@
                     else if (this.nextSibling != undefined && this.nextSibling.className === "riceCheck")
                         return $(this.nextSibling).bind("click", click);
 
-                    var div = $("<div class=riceCheck>").bind("click", click);
+                    var titleAttr;
+
+                    if (this.hasAttribute("title"))
+                        titleAttr = $(this).attr("title");
+                    else
+                        titleAttr = "";
+
+                    var div = $("<div class=riceCheck title='" + titleAttr + "'>").bind("click", click);
                     $(this).hide().after(div);
 
                     return this.isRiced = true;
@@ -810,6 +817,8 @@
             if (reload !== true) {
                 $SS.options.init();
 
+                $("#index-rev").riceCheck();
+
                 $(document).bind("QRDialogCreation", $SS.QRDialogCreationHandler)
                            .bind("OpenSettings", $SS.NodeInsertionHandler)
                            .bind("ThreadUpdate", $SS.NodeInsertionHandler);
@@ -821,7 +830,7 @@
                     for (i = 0, MAX = mutations.length; i < MAX; ++i) {
                         nodes = mutations[i].addedNodes;
 
-                        for (j = 0, _MAX = nodes.length; i < _MAX; ++i)
+                        for (j = 0, _MAX = nodes.length; j < _MAX; ++j)
                             if (nodes[j].nodeType !== 3)
                                 $("input[type=checkbox]", nodes[j]).riceCheck();
                     }
