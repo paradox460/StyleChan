@@ -1,7 +1,4 @@
 /* Catalog */
-:root.catalog-mode .board {
-  padding: 0 !important;
-}
 .extended-small .teaser, .extended-large .teaser {
   margin-left: 5px;
   margin-right: 5px;
