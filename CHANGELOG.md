@@ -1,3 +1,14 @@
+### v1.0.14
+*2016-12-01*
+
+- Add title attributes to checkboxes
+- Give native catalog thread backgrounds equal height regardless of content size
+- Change margins on native catalog to show 6 threads per row
+
+**ccd0:**
+
+-  Rice reverse sort checkbox. (4chanX #97)
+
 ### v1.0.13
 *2016-10-31*
 
